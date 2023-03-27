@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.dashboard{
+    width: 375px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
+.dashboard button{
+    background-color: #303b59;
+    border: none;
+    margin: 5% 0 5% 10%;
+    width: 90%;
+    height: 50px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 25px;
+}
+
+/* - Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0) */
+
+.result {
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+    height: 45vh;
+    border-radius: 0 0 30px 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result .yourResult{
+    letter-spacing: 1px;
+    transform: translateY(10px);
+}
+
+.result__circle{
+    width: 35%;
+    height: 130px;
+    background: linear-gradient(to top,hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    padding: 5%;
+    margin: 8% 0 0 0;
+    flex-direction: column;
+}
+
+.result__circle p{
+    color: rgb(160, 159, 159);
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.result .result__great{
+    font-size: 1.4rem;
+    margin: 6% 0 3% 0;
+}
+
+.result .result__description{
+    padding: 0% 15%;  
+    font-size: .95rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.result .result__circle h2{
+font-size: 3rem;
+}
+
+.summary{
+    padding: 5% 8%;
+}
+
+.summary p b{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.summary .summary__flex{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.summary-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "first second";
+    height: 50px;
+}
+
+    .reaction{
+        background-color: rgba(255,0,0,0.05);
+        border-radius: 10px;
+    }
+        .reaction .first p{
+            font-weight: bold;
+            color: red;
+        }
+
+    .memory{
+        background-color: rgba(212, 199, 10, 0.05);
+        border-radius: 10px;
+    }
+        .memory .first p{
+            font-weight: bold;
+            color: orange;
+        }
+    .verbal{
+        background-color: rgba(0,255,0,0.05);
+        border-radius: 10px;
+    }
+        .verbal .first p{
+            font-weight: bold;
+            color: rgb(5, 99, 5);
+        }
+    .visual{
+        background-color: rgba(0,0,255,0.05);
+        border-radius: 10px;
+    }
+        .visual .first p{
+            font-weight: bold;
+            color: rgb(21, 10, 119);
+        }
+
+.summary-grid .first{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+.summary-grid .first p{
+    margin-left: 10px;
+}
+
+.summary-grid .second{
+    display: flex;
+    font-size: bold;
+    color: grey;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-grid .second b{
+    color: #000;
+}
+
+@media (min-width:1440px){
+    body{
+        height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+
+    .dashboard{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;;
+    }
+
+    
+    .summary{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .summary .summary__flex{
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .summary-grid{
+        height: 50px;
+    }
+    
+    .result{
+        border-radius: 20px 20px 20px 20px;
+        width: 50%;
+        height: 47vh;
+    }
+    
+    .result .result__circle {
+        width: 50%;
+        height: 37%;
+        display: grid;
+        place-content: center;
+    }
+    
+    .result .result__great{
+        margin: 10% 0 5% 0;
+        font-size: 1.7rem;
+    }
+    
+    .result .result__description{
+        padding: 0% 15%;
+    }
+    
+    .dashboard button{
+        height: 50px;
+        width: 100%;
+        border-radius: 40px;
+        margin: 0;
+        margin-top: 5%;
+    }   
+    .dashboard button:hover{
+        cursor: pointer;
+    }
+}
