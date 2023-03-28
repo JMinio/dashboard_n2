@@ -108,36 +108,36 @@ font-size: 3rem;
     height: 50px;
 }
 
-    .reaction{
+    .Reaction{
         background-color: rgba(255,0,0,0.05);
         border-radius: 10px;
     }
-        .reaction .first p{
+        .Reaction .first p{
             font-weight: bold;
             color: red;
         }
 
-    .memory{
+    .Memory{
         background-color: rgba(212, 199, 10, 0.05);
         border-radius: 10px;
     }
-        .memory .first p{
+        .Memory .first p{
             font-weight: bold;
             color: orange;
         }
-    .verbal{
+    .Verbal{
         background-color: rgba(0,255,0,0.05);
         border-radius: 10px;
     }
-        .verbal .first p{
+        .Verbal .first p{
             font-weight: bold;
             color: rgb(5, 99, 5);
         }
-    .visual{
+    .Visual{
         background-color: rgba(0,0,255,0.05);
         border-radius: 10px;
     }
-        .visual .first p{
+        .Visual .first p{
             font-weight: bold;
             color: rgb(21, 10, 119);
         }
@@ -203,7 +203,7 @@ font-size: 3rem;
     }
     
     .result .result__circle {
-        width: 50%;
+        width: 37%;
         height: 37%;
         display: grid;
         place-content: center;
