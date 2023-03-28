@@ -203,8 +203,8 @@ font-size: 3rem;
     }
     
     .result .result__circle {
-        width: 37%;
-        height: 37%;
+        width: 45%;
+        height: 35%;
         display: grid;
         place-content: center;
     }

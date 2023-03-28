@@ -1,7 +1,7 @@
 
 const summary_items = document.getElementById("summary_items");
 
-document.querySelector("#mostrar").addEventListener("click", traerDatos)
+document.querySelector("#continue").addEventListener("click", traerDatos)
 
 function traerDatos() {
     const newInstance = new XMLHttpRequest();
